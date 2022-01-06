@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;900&display=swap");
+.container {
+  margin: 0 249px;
+  width: 100%;
+}
+
+.header-container {
+  position: absolute;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-down {
+  width: 100%;
+}
+
+.header-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.header-logo {
+  font-family: 'Red Hat Display';
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 95px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #634005;
+}
+
+.header-logo-full {
+  display: none;
+}
+
+.contact-us-link {
+  display: none;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+a {
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: #634005;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo-after-load {
+  -webkit-transform: translate(-192%, 0);
+          transform: translate(-192%, 0);
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.home-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(../img/home-image.jpg);
+  background-size: cover;
+}
+/*# sourceMappingURL=styles.css.map */
