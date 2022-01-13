@@ -23,7 +23,7 @@
     }
 }
 
-.header-logo {
+.header-logo a{
     font-family: 'Red Hat Display';
     font-size: 72px;
     font-style: normal;
@@ -32,11 +32,8 @@
     letter-spacing: 0em;
     text-align: left;
     color: $brown;
-
-    &-full {
-        display: none;
-    }
 }
+
 .contact-us-link {
     font-family: Red Hat Display;
     font-size: 36px;
@@ -49,7 +46,8 @@
     align-items: center;
 
 }
-a{
+
+a {
     font-family: Red Hat Display;
     font-size: 36px;
     font-style: normal;
@@ -60,16 +58,19 @@ a{
     text-decoration: none;
     color: $brown;
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.header-logo-after-load{
-    transform: translate(-446px,0);
+
+.header-logo-after-load {
+    transform: translate(-446px, 0);
     transition: all 2s ease-in-out;
 }
-.contact-us-afterload{
-    transform: translate(480px,0);
+
+.contact-us-afterload {
+    transform: translate(480px, 0);
     transition: all 2s ease-in-out;
 }

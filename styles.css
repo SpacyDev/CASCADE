@@ -36,7 +36,7 @@
   list-style: none;
 }
 
-.header-logo {
+.header-logo a {
   font-family: 'Red Hat Display';
   font-size: 72px;
   font-style: normal;
@@ -45,10 +45,6 @@
   letter-spacing: 0em;
   text-align: left;
   color: #634005;
-}
-
-.header-logo-full {
-  display: none;
 }
 
 .contact-us-link {
