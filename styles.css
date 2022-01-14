@@ -10,6 +10,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 
@@ -20,6 +21,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .header-down {
@@ -34,9 +36,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
+  border-top: #634005 1px solid;
+  padding: 0px;
 }
 
-.header-logo a {
+.header-logo .cascade {
   font-family: 'Red Hat Display';
   font-size: 72px;
   font-style: normal;
@@ -45,6 +49,32 @@
   letter-spacing: 0em;
   text-align: left;
   color: #634005;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header-logo a:hover span {
+  display: none;
+}
+
+.header-logo a:hover:before {
+  font-family: 'Red Hat Display';
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #634005;
+  line-height: 47.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 57%;
+  content: "Central Asia and South Caucuses Agricultural University Consortium for Development";
 }
 
 .contact-us-link {
@@ -63,6 +93,10 @@
           align-items: center;
 }
 
+.contact-us-link a {
+  padding-top: 23px;
+}
+
 a {
   font-family: Red Hat Display;
   font-size: 36px;
@@ -73,6 +107,12 @@ a {
   text-align: left;
   text-decoration: none;
   color: #634005;
+}
+
+a:hover {
+  color: #155305;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-container {
@@ -86,20 +126,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header-logo-after-load {
-  -webkit-transform: translate(-446px, 0);
-          transform: translate(-446px, 0);
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-
-.contact-us-afterload {
-  -webkit-transform: translate(480px, 0);
-          transform: translate(480px, 0);
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
 }
 
 .home-container {

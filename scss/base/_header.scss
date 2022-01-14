@@ -3,13 +3,14 @@
         position: absolute;
         z-index: 0;
         display: flex;
-
+        background-color: rgba($color: #000000, $alpha: 0.2);
         width: 100%;
     }
 
     &-up {
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
 
     &-down {
@@ -20,10 +21,13 @@
         display: flex;
         justify-content: space-between;
         list-style: none;
+        border-top: $brown 1px solid;
+        padding: 0px;
     }
 }
 
-.header-logo a{
+.header-logo{
+    .cascade{
     font-family: 'Red Hat Display';
     font-size: 72px;
     font-style: normal;
@@ -32,6 +36,26 @@
     letter-spacing: 0em;
     text-align: left;
     color: $brown;
+    display: flex;
+    align-items: flex-end;
+    }
+    a:hover span{
+        display: none;
+    }
+    a:hover:before{
+        font-family: 'Red Hat Display';
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $brown; 
+        line-height: 47.5px; 
+        display: flex;
+        width: 57%;
+        content: "Central Asia and South Caucuses Agricultural University Consortium for Development"
+    }
+    
 }
 
 .contact-us-link {
@@ -44,6 +68,9 @@
     text-align: left;
     display: flex;
     align-items: center;
+    a{
+        padding-top: 23px;
+    }
 
 }
 
@@ -58,6 +85,10 @@ a {
     text-decoration: none;
     color: $brown;
 }
+a:hover{
+    color: $green;
+    transition: 0.5s;
+}
 
 .nav-container {
     display: flex;
@@ -65,12 +96,13 @@ a {
     align-items: center;
 }
 
-.header-logo-after-load {
-    transform: translate(-446px, 0);
-    transition: all 2s ease-in-out;
-}
+// .header-logo-after-load {
+//     transform: translate(-488px, 0);
+//     transition: all 2s ease-in-out;
+// }
 
-.contact-us-afterload {
-    transform: translate(480px, 0);
-    transition: all 2s ease-in-out;
-}
+// .contact-us-afterload {
+//     transform: translate(480px, 0);
+//     transition: all 2s ease-in-out;
+// }
+
